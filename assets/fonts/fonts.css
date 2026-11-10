@@ -1,0 +1,92 @@
+/* ============================================================
+   الخطوط — تُحمَّل محلياً (بدون إنترنت) حتى تعمل الدعوة دائماً
+   Fonts are bundled locally so the invitation works offline.
+   ============================================================ */
+
+/* العناوين الكبيرة — Aref Ruqaa */
+@font-face {
+  font-family: 'ArefRuqaa';
+  src: url('aref-ruqaa-arabic-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ArefRuqaa';
+  src: url('aref-ruqaa-arabic-700-normal.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* النصوص العربية — El Messiri */
+@font-face {
+  font-family: 'ElMessiri';
+  src: url('el-messiri-arabic-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ElMessiri';
+  src: url('el-messiri-arabic-500-normal.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ElMessiri';
+  src: url('el-messiri-arabic-600-normal.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ElMessiri';
+  src: url('el-messiri-arabic-700-normal.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* النصوص الصغيرة / الأرقام العربية — Tajawal */
+@font-face {
+  font-family: 'Tajawal';
+  src: url('tajawal-arabic-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tajawal';
+  src: url('tajawal-arabic-500-normal.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tajawal';
+  src: url('tajawal-arabic-700-normal.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* الأسماء اللاتينية — Cormorant Garamond */
+@font-face {
+  font-family: 'Cormorant';
+  src: url('cormorant-garamond-latin-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cormorant';
+  src: url('cormorant-garamond-latin-500-normal.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cormorant';
+  src: url('cormorant-garamond-latin-600-normal.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+}
+
+/* التوقيع الخطي — Great Vibes */
+@font-face {
+  font-family: 'GreatVibes';
+  src: url('great-vibes-latin-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}

@@ -1,0 +1,17 @@
+# Node
+node_modules/
+package-lock.json
+
+# مخرجات مؤقتة
+tools/.frames/
+tools/bin/
+docs/video-analysis/frames/
+
+# فيديوهات ثقيلة (ارفعها بشكل منفصل إن لزم)
+
+
+
+
+# نظام
+.DS_Store
+Thumbs.db

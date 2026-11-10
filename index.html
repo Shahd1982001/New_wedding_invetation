@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title data-bind="title">دعوة زفاف</title>
+<meta name="description" content="دعوة زفاف إلكترونية">
+<meta name="theme-color" content="#0d3b2e">
+<meta property="og:title" content="دعوة زفاف">
+<meta property="og:description" content="يسعدنا حضوركم لمشاركتنا أجمل لحظات حياتنا">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤍</text></svg>">
+</head>
+<body>
+
+<!-- ══════════════ شاشة الافتتاح / الانvelope ══════════════ -->
+<div class="intro" id="intro">
+  <canvas class="intro-dust" id="dust"></canvas>
+
+  <div class="intro-inner">
+    <div class="bismillah reveal-1">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+
+    <div class="seal-wrap reveal-2">
+      <div class="seal-halo"></div>
+      <div class="seal">
+        <div class="seal-inner">
+          <span class="mono-ini" data-bind="brideInitial">S</span>
+          <svg class="seal-amp" viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M20 6c3 5 3 9 0 14-3-5-3-9 0-14Zm0 14c3 5 3 9 0 14-3-5-3-9 0-14Z" fill="currentColor" opacity=".55"/>
+            <circle cx="20" cy="20" r="2.2" fill="currentColor"/>
+          </svg>
+          <span class="mono-ini" data-bind="groomInitial">A</span>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="intro-names reveal-3">
+      <span data-bind="brideAr">سارة</span>
+      <span class="waw">&amp;</span>
+      <span data-bind="groomAr">أحمد</span>
+    </h1>
+
+    <p class="intro-sub reveal-4">يتشرّفان بدعوتكم لحضور حفل زفافهما</p>
+
+    <button class="open-btn reveal-5" id="openBtn" type="button">
+      <span>افتح الدعوة</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v13m0 0 6-6m-6 6-6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+    <div class="intro-date reveal-5" data-bind="dateShort">١١ · ٠٦ · ٢٠٢٧</div>
+  </div>
+
+  <div class="intro-orn top"></div>
+  <div class="intro-orn bottom"></div>
+</div>
+
+<!-- ══════════════ المحتوى ══════════════ -->
+<main id="main" class="main" aria-hidden="true">
+
+  <!-- ── ١. الغلاف ── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-glow"></div>
+      <div class="hero-arch"></div>
+      <svg class="hero-leaves left" viewBox="0 0 220 420" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="1.1">
+          <path d="M110 420C110 300 95 200 55 120"/>
+          <path d="M110 330c-30-8-52-30-60-62 32 4 54 26 60 62Z"/>
+          <path d="M104 270c28-10 46-32 52-62-30 6-48 28-52 62Z"/>
+          <path d="M86 205c-24-10-38-30-40-56 26 8 38 28 40 56Z"/>
+          <path d="M70 150c20-12 32-30 34-56-22 10-32 30-34 56Z"/>
+        </g>
+      </svg>
+      <svg class="hero-leaves right" viewBox="0 0 220 420" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="1.1">
+          <path d="M110 420C110 300 95 200 55 120"/>
+          <path d="M110 330c-30-8-52-30-60-62 32 4 54 26 60 62Z"/>
+          <path d="M104 270c28-10 46-32 52-62-30 6-48 28-52 62Z"/>
+          <path d="M86 205c-24-10-38-30-40-56 26 8 38 28 40 56Z"/>
+          <path d="M70 150c20-12 32-30 34-56-22 10-32 30-34 56Z"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="hero-content">
+      <p class="eyebrow">دعوة زفاف</p>
+
+      <h2 class="names">
+        <span class="name-line" data-bind="brideAr">سارة</span>
+        <span class="amp">&amp;</span>
+        <span class="name-line" data-bind="groomAr">أحمد</span>
+      </h2>
+
+      <div class="names-latin">
+        <span data-bind="brideLatin">Sara</span>
+        <i></i>
+        <span data-bind="groomLatin">Ahmed</span>
+      </div>
+
+      <div class="divider">
+        <span class="dline"></span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c2.4 4.4 5.6 7.6 10 10-4.4 2.4-7.6 5.6-10 10-2.4-4.4-5.6-7.6-10-10 4.4-2.4 7.6-5.6 10-10Z" fill="none" stroke="currentColor" stroke-width="1.1"/></svg>
+        <span class="dline"></span>
+      </div>
+
+      <p class="hero-date" data-bind="dateLong">الجمعة ١١ يونيو ٢٠٢٧م</p>
+      <p class="hero-venue" data-bind="venueName">قاعة الماسة الكبرى — جدة</p>
+
+      <a href="#story" class="scroll-hint" aria-label="انزل للأسفل">
+        <span></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── ٢. الآية ── -->
+  <section class="verse-section" id="story">
+    <div class="section-wrap narrow">
+      <div class="arabesque-top" aria-hidden="true"></div>
+      <blockquote class="verse">
+        <p data-bind="quoteText">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً</p>
+        <cite data-bind="quoteSource">سورة الروم — الآية ٢١</cite>
+      </blockquote>
+      <div class="arabesque-bottom" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ── ٣. العدّ التنازلي ── -->
+  <section class="countdown-section" id="countdown">
+    <div class="section-wrap">
+      <p class="section-kicker">باقي على الفرح</p>
+      <div class="countdown" id="countdownGrid" aria-live="polite">
+        <div class="cd-cell"><span class="cd-num" data-cd="d">٠٠</span><span class="cd-lab">يوم</span></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-cell"><span class="cd-num" data-cd="h">٠٠</span><span class="cd-lab">ساعة</span></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-cell"><span class="cd-num" data-cd="m">٠٠</span><span class="cd-lab">دقيقة</span></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-cell"><span class="cd-num" data-cd="s">٠٠</span><span class="cd-lab">ثانية</span></div>
+      </div>
+
+      <div class="countdown-done" id="countdownDone" hidden>
+        <p class="done-title">الحمد لله الذي تمّ بنعمته</p>
+        <p class="done-sub">شكراً لكل من شاركنا فرحتنا <svg class="ico ico-heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.6-7-9.4A3.9 3.9 0 0 1 12 8a3.9 3.9 0 0 1 7 2.6C19 15.4 12 20 12 20Z" fill="currentColor"/></svg></p>
+      </div>
+
+      <div class="date-card">
+        <div class="dc-side">
+          <span class="dc-num" data-bind="dayNum">١١</span>
+          <span class="dc-mon" data-bind="monthAr">يونيو</span>
+        </div>
+        <div class="dc-mid">
+          <span class="dc-day" data-bind="dayName">الجمعة</span>
+          <span class="dc-year" data-bind="yearAr">٢٠٢٧</span>
+          <span class="dc-hijri" data-bind="hijriNote">٦ ذو الحجة ١٤٤٨هـ</span>
+        </div>
+        <div class="dc-side">
+          <span class="dc-time" data-bind="timeAr">٨:٠٠ مساءً</span>
+          <span class="dc-small">بعد صلاة العشاء</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ٤. البرنامج ── -->
+  <section class="program-section" id="program">
+    <div class="section-wrap">
+      <p class="section-kicker">برنامج الحفل</p>
+      <h3 class="section-title">سير الليلة</h3>
+
+      <ol class="timeline" id="timelineList">
+        <li class="tl-item">
+          <span class="tl-dot"></span>
+          <span class="tl-time">٠٨:٠٠</span>
+          <span class="tl-body"><b>استقبال الضيوف</b><em>قهوة عربية وتمر</em></span>
+        </li>
+        <li class="tl-item">
+          <span class="tl-dot"></span>
+          <span class="tl-time">٠٩:٠٠</span>
+          <span class="tl-body"><b>الزفة</b><em>دخول العروسين</em></span>
+        </li>
+        <li class="tl-item">
+          <span class="tl-dot"></span>
+          <span class="tl-time">١٠:٠٠</span>
+          <span class="tl-body"><b>العشاء</b><em>بوفيه مفتوح</em></span>
+        </li>
+        <li class="tl-item">
+          <span class="tl-dot"></span>
+          <span class="tl-time">١١:٣٠</span>
+          <span class="tl-body"><b>التصوير والوداع</b><em>نشكر حضوركم</em></span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ── ٥. المكان ── -->
+  <section class="venue-section" id="venue">
+    <div class="section-wrap">
+      <p class="section-kicker">المكان</p>
+      <h3 class="section-title" data-bind="venueName">قاعة الماسة الكبرى</h3>
+      <p class="venue-addr">
+        <span data-bind="venueCity">جدة — حي الشاطئ</span><br>
+        <span class="muted" data-bind="venueAddress">طريق الأمير سلطان، مقابل منتزه الشاطئ</span>
+      </p>
+
+      <div class="venue-map">
+        <div class="map-pattern" aria-hidden="true"></div>
+        <div class="map-pin">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="2.5" fill="currentColor"/></svg>
+        </div>
+        <a class="map-btn" data-bind-href="mapUrl" href="https://maps.google.com" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2Zm0 0v14m6-12v14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          افتح الخريطة
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ٦. تأكيد الحضور ── -->
+  <section class="rsvp-section" id="rsvp">
+    <div class="section-wrap narrow">
+      <p class="section-kicker">تأكيد الحضور</p>
+      <h3 class="section-title">هل ستكون معنا؟</h3>
+      <p class="rsvp-note">نرجو تأكيد الحضور <span data-bind="rsvpDeadline">قبل ٢٥ مايو ٢٠٢٧</span> لنحفظ لك مقعداً بجوارنا <svg class="ico ico-heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.6-7-9.4A3.9 3.9 0 0 1 12 8a3.9 3.9 0 0 1 7 2.6C19 15.4 12 20 12 20Z" fill="currentColor"/></svg></p>
+
+      <form class="rsvp-form" id="rsvpForm" autocomplete="off">
+        <label class="field">
+          <span>الاسم الكريم</span>
+          <input type="text" name="name" id="rsvpName" placeholder="اكتب اسمك" required>
+        </label>
+
+        <label class="field">
+          <span>عدد الأشخاص</span>
+          <select name="guests" id="rsvpGuests">
+            <option value="1">شخص واحد</option>
+            <option value="2">شخصان</option>
+            <option value="3">٣ أشخاص</option>
+            <option value="4">٤ أشخاص</option>
+            <option value="5">٥ أشخاص أو أكثر</option>
+          </select>
+        </label>
+
+        <div class="attend-toggle" role="radiogroup" aria-label="هل ستحضر؟">
+          <label><input type="radio" name="attend" value="yes" checked><span>بكل سرور <svg class="ico ico-spark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c1.8 3.4 4.4 6 8 8-3.6 2-6.2 4.6-8 8-1.8-3.4-4.4-6-8-8 3.6-2 6.2-4.6 8-8Z" fill="currentColor"/></svg></span></label>
+          <label><input type="radio" name="attend" value="no"><span>أعتذر <svg class="ico ico-leaf" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-7 4-12 14-13-1 10-6 14-13 14H5Z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M5 19c3-4 6-6 9-7" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span></label>
+        </div>
+
+        <button class="submit-btn" type="submit">
+          <span>أرسل التأكيد عبر واتساب</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.7 7.4L3 21l2.1-5.3A8.5 8.5 0 1 1 21 11.5Z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8.6 8.4c.3-.6 1.3-.6 1.6 0l.7 1.4c.2.3.1.7-.1.9l-.5.6c.5 1 1.5 2 2.5 2.5l.6-.5c.2-.2.6-.3.9-.1l1.4.7c.6.3.6 1.3 0 1.6-1.6.8-3.6-.1-5.2-1.7-1.6-1.6-2.5-3.6-1.9-5.4Z" fill="currentColor"/></svg>
+        </button>
+
+        <p class="form-hint" id="formHint">سيتم فتح واتساب برسالة جاهزة — فقط اضغط إرسال.</p>
+      </form>
+
+      <a class="call-link" data-bind-href="phone" href="tel:+966500000000">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5c0-1 1-2 2-2h2l2 5-2 1c.8 2 2.2 3.4 4.2 4.2l1-2 5 2v2c0 1-1 2-2 2C9.7 17.2 4 11.5 4 5Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        أو اتصل بالعريس
+      </a>
+    </div>
+  </section>
+
+  <!-- ── ٧. الختام ── -->
+  <footer class="outro">
+    <div class="outro-inner">
+      <p class="outro-bismillah">بِسْمِ اللَّهِ</p>
+      <h3 class="outro-names">
+        <span data-bind="brideLatin">Sara</span>
+        <span class="outro-amp">&amp;</span>
+        <span data-bind="groomLatin">Ahmed</span>
+      </h3>
+      <p class="outro-invite">حضوركم أجمل هدية <svg class="ico ico-heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.6-7-9.4A3.9 3.9 0 0 1 12 8a3.9 3.9 0 0 1 7 2.6C19 15.4 12 20 12 20Z" fill="currentColor"/></svg><br>شاركونا فرحتنا</p>
+      <div class="outro-hearts" aria-hidden="true">
+        <span>✦</span><span>✧</span><span>✦</span>
+      </div>
+      <p class="outro-date" data-bind="dateShort">١١ · ٠٦ · ٢٠٢٧</p>
+    </div>
+  </footer>
+
+</main>
+
+<!-- زر الرجوع للأعلى -->
+<button class="to-top" id="toTop" aria-label="أعلى الصفحة" hidden>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V7m0 0-6 6m6-6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

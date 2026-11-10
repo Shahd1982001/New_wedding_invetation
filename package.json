@@ -1,0 +1,15 @@
+{
+  "name": "wedding-invitation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Arabic wedding invitation website (RTL) + website-to-video renderer",
+  "scripts": {
+    "serve": "python3 -m http.server 8080",
+    "render": "node tools/render-teaser.mjs",
+    "analyze": "node tools/analyze-video.mjs"
+  },
+  "dependencies": {
+    "@sparticuz/chromium": "^131.0.0",
+    "puppeteer-core": "^23.0.0"
+  }
+}
